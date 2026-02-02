@@ -8,17 +8,23 @@
 // ------------------------------------------------------------
 // Start screen visuals
 // ------------------------------------------------------------
+let backgroundimg;
+
+function preload() {
+  backgroundimg = loadImage("backgroundimg.jpg"); // Photo by Eric Park on Unsplash https://unsplash.com/photos/photo-frames-inside-building-QbX8A8eHfzw
+}
+
 // drawStart() is called from main.js only when:
 // currentScreen === "start"
 function drawStart() {
-  // Background colour for the start screen
-  background(180, 225, 220); // soft teal background
+  // Background image for the start screen
+  image(backgroundimg, 0, 0, width, height);
 
   // ---- Title text ----
-  fill(30, 50, 60);
+  fill(255, 255, 255);
   textSize(46);
   textAlign(CENTER, CENTER);
-  text("Win or Lose", width / 2, 180);
+  text("Interactive Art Gallery", width / 2, 180);
 
   // ---- Buttons (data only) ----
   // These objects store the position/size/label for each button.
@@ -110,17 +116,17 @@ function drawButton({ x, y, w, h, label }) {
   // We also add a shadow using drawingContext (p5 lets you access the
   // underlying canvas context for effects like shadows).
   if (hover) {
-    fill(255, 200, 150, 220); // warm coral on hover
+    fill(255, 255, 255, 250); // warm coral on hover
 
     // Shadow settings (only when hovered)
     drawingContext.shadowBlur = 20;
-    drawingContext.shadowColor = color(255, 180, 120);
+    drawingContext.shadowColor = color(255, 255, 255);
   } else {
     fill(255, 240, 210, 210); // soft cream base
 
     // Softer shadow when not hovered
     drawingContext.shadowBlur = 8;
-    drawingContext.shadowColor = color(220, 220, 220);
+    drawingContext.shadowColor = color(255, 255, 255);
   }
 
   // Draw the rounded rectangle button
