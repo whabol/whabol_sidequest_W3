@@ -13,16 +13,44 @@ function drawLose() {
   // Red-tinted background to communicate failure
   background(255, 210, 210);
 
+  //sad face's center coordinates
+  let circlex = width / 2;
+  let circley = width / 2;
+
+  //face
+  fill(255, 220, 0);
+  noStroke();
+  ellipse(circlex, circley, 250, 250);
+
+  //eyes
+  fill(0);
+  ellipse(circlex - 50, circley - 40, 30, 40); //left eye
+  ellipse(circlex + 50, circley - 40, 30, 40); //right eye
+
+  //frown
+  noFill();
+  stroke(0);
+  strokeWeight(8);
+  arc(circlex, circley + 60, 150, 120, PI, TWO_PI); //smile
+
+  fill(0);
+  noStroke();
+  textAlign(CENTER, CENTER);
+
   fill(0);
   textAlign(CENTER, CENTER);
 
   // Main message
   textSize(40);
-  text("You Lose!", width / 2, 300);
+  text("Aw, visitor didn't purchase!", width / 2, 200);
 
   // Instruction text
   textSize(20);
-  text("Click or press R to return to Start.", width / 2, 360);
+  text(
+    "Click or press R to return to the start of the Interactive Art Gallery.",
+    width / 2,
+    600,
+  );
 }
 
 // ------------------------------
