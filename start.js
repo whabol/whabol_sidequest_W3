@@ -8,11 +8,6 @@
 // ------------------------------------------------------------
 // Start screen visuals
 // ------------------------------------------------------------
-let backgroundimg;
-
-function preload() {
-  backgroundimg = loadImage("backgroundimg.jpg"); // Photo by Eric Park on Unsplash https://unsplash.com/photos/photo-frames-inside-building-QbX8A8eHfzw
-}
 
 // drawStart() is called from main.js only when:
 // currentScreen === "start"

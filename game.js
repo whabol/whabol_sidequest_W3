@@ -13,8 +13,8 @@
 // Keeping this in one object makes it easier to move,
 // resize, or restyle the button later.
 const gameBtn = {
-  x: 400, // x position (centre of the button)
-  y: 550, // y position (centre of the button)
+  x: 440, // x position (centre of the button)
+  y: 600, // y position (centre of the button)
   w: 260, // width
   h: 90, // height
   label: "PRESS HERE", // text shown on the button
@@ -27,19 +27,23 @@ const gameBtn = {
 // when currentScreen === "game"
 function drawGame() {
   // Set background colour for the game screen
-  background(240, 230, 140);
+  image(artimg, 0, 0, width, height);
+
+  fill(255, 240);
+  rect(width / 2, 90, 700, 120);
+  rectMode(CENTER);
 
   // ---- Title and instructions text ----
   fill(0); // black text
   textSize(32);
   textAlign(CENTER, CENTER);
-  text("Game Screen", width / 2, 160);
+  text("Welcome to the Interactive Art Gallery", width / 2, 70);
 
   textSize(18);
   text(
-    "Click the button (or press ENTER) for a random result.",
+    "Click the button (or press ENTER) to see if the visitor chooses to buy your art piece.",
     width / 2,
-    210,
+    120,
   );
 
   // ---- Draw the button ----

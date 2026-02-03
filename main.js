@@ -23,6 +23,13 @@
 // Only one screen should be active at a time.
 let currentScreen = "start"; // "start" | "instr" | "game" | "win" | "lose"
 
+let backgroundimg;
+let artimg;
+
+function preload() {
+  backgroundimg = loadImage("backgroundimg.jpg"); // Photo by Eric Park on Unsplash https://unsplash.com/photos/photo-frames-inside-building-QbX8A8eHfzw
+  artimg = loadImage("art piece.jpg"); // Photo by Simona Sergi on Unsplash https://unsplash.com/photos/man-in-black-jacket-standing-in-front-of-white-wall-with-orange-and-yellow-heart-wall-OfjOuw_prPg
+}
 // ------------------------------
 // setup() runs ONCE at the beginning
 // ------------------------------
