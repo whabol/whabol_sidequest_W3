@@ -27,7 +27,7 @@ function drawInstr() {
   // This is useful for simple multi-line instructions
   const lines =
     "Press the game button to see if the visitor chooses to purchase your art.\n" +
-    "You have a chance to win or lose!";
+    "You have a chance to win or lose! Collect 10 coins each time you get an art purchase!";
 
   text(lines, width / 2, 160);
 

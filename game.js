@@ -125,6 +125,7 @@ function triggerRandomOutcome() {
   // You can bias this later, for example:
   // random() < 0.7 → 70% chance to win
   if (random() < 0.5) {
+    playerPoints += 10;
     currentScreen = "win";
   } else {
     currentScreen = "lose";

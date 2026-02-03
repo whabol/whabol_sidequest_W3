@@ -50,8 +50,21 @@ function drawWin() {
   text(
     "Click or press R to return to the start of the Interactive Art Gallery.",
     width / 2,
-    600,
+    700,
   );
+
+  //points
+  noStroke();
+  fill(0);
+  textAlign(CENTER, CENTER);
+
+  textSize(28);
+  text("Coins Earned:", circlex, circley + 160);
+
+  fill(255);
+  stroke(0);
+  textSize(60);
+  text(playerPoints, circlex, circley + 220);
 }
 
 // ------------------------------------------------------------

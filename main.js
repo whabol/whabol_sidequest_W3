@@ -25,6 +25,7 @@ let currentScreen = "start"; // "start" | "instr" | "game" | "win" | "lose"
 
 let backgroundimg;
 let artimg;
+let playerPoints = 0;
 
 function preload() {
   backgroundimg = loadImage("backgroundimg.jpg"); // Photo by Eric Park on Unsplash https://unsplash.com/photos/photo-frames-inside-building-QbX8A8eHfzw
