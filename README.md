@@ -1,28 +1,19 @@
 ## Project Title
 
-GBDA302 Week 3 Example 1: Instructions Screen with Back button
+Sidequest Week 3
 
 ---
 
 ## Authors
 
-Karen Cochrane and David Han
+Winta Habol
 
 ---
 
 ## Description
 
-This p5.js project demonstrates a simple multi-screen game structure using a state-based approach. The example includes a start screen, an instructions screen with a back button, a basic game screen, and win/lose outcome screens. The focus is on showing how to separate screens into different files, route input based on the current game state, and design simple UI elements such as buttons and keyboard controls.
+This p5.js project uses example 3 and is still a simple multi-screen game structure that uses a state-based approach. It is a interactive Art Gallery that includes a start screen, an instruction screen with a back button, a game screen that allows players to click the button and see if the visitor chose to buy their painting. If the win screen appears, a painting was purchased by the visitor and the player wins 10 points, but if it wasn't purchased then the lose screen appears with a frowny face and no point score.
 
----
-
-## Learning Goals
-
-- Understand how to manage multiple game states using a shared currentScreen variable
-- Practice separating code across multiple files for readability and maintenance
-- Implement clickable and keyboard-accessible UI buttons
-- Learn how to route draw(), mousePressed(), and keyPressed() logic based on the active screen
-- Build a basic instructions screen with a functional back button
 
 ---
 
@@ -34,6 +25,6 @@ N/A
 
 ## GenAI
 
-The code was written by Dr. Karen Cochrane but she used GenAI to write the comments.
+The code still uses the example code written by Dr. Karen Cochrane. However changes made by Winta Habol used GenAI for helping to code interactive story idea and debugging.
 
 ---
